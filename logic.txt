@@ -1,0 +1,33 @@
+Logical Reasoning:
+
+1. swap_nodes function:
+   - Purpose: Swap two nodes in a doubly linked list.
+   - Parameters:
+     - h: A pointer to the head of the doubly-linked list.
+     - n1: A pointer to the first node to swap.
+     - n2: The second node to swap.
+   - Steps:
+     1. Update the next pointer of n1 to point to n2's next node.
+     2. If n2 has a next node, update its previous pointer to point to n1.
+     3. Update n2's prev pointer to point to n1's prev node.
+     4. Update n2's next pointer to point to n1.
+     5. If n1 has a previous node, update its next pointer to point to n2.
+     6. If n1 is the head of the list, update the head pointer to point to n2.
+     7. Update n1's prev pointer to point to n2's prev node.
+     8. Update the reference to n1 to point to n2's prev node.
+
+2. insertion_sort_list function:
+   - Purpose: Sort a doubly linked list of integers using the insertion sort algorithm.
+   - Parameters:
+     - list: A pointer to the head of a doubly-linked list of integers.
+   - Steps:
+     1. Check if the list is empty or contains only one node; if so, return.
+     2. Iterate through the list starting from the second node:
+        a. Store the next node of the current node in a temporary variable.
+        b. Initialize an insert pointer to the previous node of the current node.
+        c. While the insert pointer is not NULL and the value of the current node is less than the value of the insert node:
+           i. Swap the current node with the insert node using the swap_nodes function.
+           ii. Print the list after each swap.
+     3. Repeat until all nodes are traversed and sorted.
+
+This logic describes the purpose and steps of the provided functions for swapping nodes in a doubly linked list and sorting the list using the insertion sort algorithm.
