@@ -1,5 +1,39 @@
 Logical Reasoning:
 
+Task 0
+
+Logical Reasoning:
+
+1. swap_ints function:
+   - Purpose: Swap two integers in an array.
+   - Parameters:
+     - a: The first integer to swap.
+     - b: The second integer to swap.
+   - Steps:
+     1. Store the value of the first integer in a temporary variable.
+     2. Update the value of the first integer with the value of the second integer.
+     3. Update the value of the second integer with the value stored in the temporary variable.
+
+2. bubble_sort function:
+   - Purpose: Sort an array of integers in ascending order using the bubble sort algorithm.
+   - Parameters:
+     - array: An array of integers to sort.
+     - size: The size of the array.
+   - Steps:
+     1. Check if the array is NULL or if its size is less than 2; if so, return.
+     2. Initialize a boolean variable "bubbly" to track whether any swaps were made in the current pass.
+     3. Iterate through the array until no swaps are made in a pass:
+        a. Set "bubbly" to true at the beginning of each pass.
+        b. Iterate through the array from index 0 to size - 2:
+           i. If the current element is greater than the next element:
+              - Swap the current element with the next element using the swap_ints function.
+              - Print the array after each swap.
+              - Set "bubbly" to false to indicate that a swap was made.
+     4. Decrease the length of the array by 1 for each pass to optimize the sorting process.
+
+This logic describes the purpose and steps of the provided functions for swapping integers in an array and sorting the array using the bubble sort algorithm.
+
+
 1. swap_nodes function:
    - Purpose: Swap two nodes in a doubly linked list.
    - Parameters:
