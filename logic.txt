@@ -1,6 +1,6 @@
 Logical Reasoning:
 
-Task 0
+##Task 0
 
 Logical Reasoning:
 
@@ -65,3 +65,33 @@ This logic describes the purpose and steps of the provided functions for swappin
      3. Repeat until all nodes are traversed and sorted.
 
 This logic describes the purpose and steps of the provided functions for swapping nodes in a doubly linked list and sorting the list using the insertion sort algorithm.
+
+##Task 2
+
+Logical Reasoning:
+
+1. swap_ints function:
+   - Purpose: Swap two integers in an array.
+   - Parameters:
+     - a: The first integer to swap.
+     - b: The second integer to swap.
+   - Steps:
+     1. Store the value of the first integer in a temporary variable.
+     2. Update the value of the first integer with the value of the second integer.
+     3. Update the value of the second integer with the value stored in the temporary variable.
+
+2. selection_sort function:
+   - Purpose: Sort an array of integers in ascending order using the selection sort algorithm.
+   - Parameters:
+     - array: An array of integers to sort.
+     - size: The size of the array.
+   - Steps:
+     1. Check if the array is NULL or if its size is less than 2; if so, return.
+     2. Iterate through the array, selecting the minimum element in each pass:
+        - Initialize a pointer "min" to the current element.
+        - Iterate through the remaining elements in the array:
+           - If the current element is smaller than the current minimum, update "min" to point to the current element.
+        - If the current minimum is not the same as the current element:
+           - Swap the current element with the minimum element using the swap_ints function.
+           - Print the array after each swap.
+     3. Repeat until the entire array is sorted.
